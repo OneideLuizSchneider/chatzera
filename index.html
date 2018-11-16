@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChatZera</title>
+    <link rel="stylesheet" href="assets/chat.css">
+</head>
+
+<body>
+    <div class="nickname_container" id="nick">
+        <center>
+            <img src="assets/images/logoChatZera.png" width="200" />
+        </center>
+
+        <span>NicknameZera:</span>
+        <form id="submit"><input type="text" id="nickname" autofocus /></form>
+
+    </div>
+
+    <div id="chat" hidden>
+        <div class="menu">
+
+            <div class="name" id="name">ChatZera - The chat of the caspa</div>
+            <div class="last" id="time">00:00</div>
+        </div>
+
+        <div class="watermark"></div>
+
+        <div id="chat-zera">
+            <ol class="chat">
+
+            </ol>
+        </div>
+
+        <input class="textarea" type="text" placeholder="Digite uma mensagem aqui" id="textarea" />
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="lib/reconnecting-websocket.min.js"></script>
+    <script src="assets/chat.js"></script>
+</body>
+
+</html>
